@@ -24,7 +24,7 @@
         ]
     ],
     "checkver": {
-        "url": "C:/Users/didong/work/cic/bucket/self-bucket/vsersion/axure",
+        "url": "https://www.axure.com/release-notes",
         "regex": "([\\d.]+)"
     },
     "autoupdate": {
