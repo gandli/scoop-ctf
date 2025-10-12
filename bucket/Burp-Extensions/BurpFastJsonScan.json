@@ -1,10 +1,10 @@
 {
     "version": "2.2.2",
-    "description": "一款基于BurpSuite的被动式FastJson检测插件�?Scoop bucket for Cybersecurity by whoopscs)",
+    "description": "一款基于 BurpSuite 的被动式 FastJson 检测插件 (Scoop bucket for Cybersecurity by whoopscs)",
     "homepage": "https://github.com/pmiaowu/BurpFastJsonScan",
     "license": "Unknown",
     "notes": [
-        "BurpSuite 添加插件时，请选择插件目录�?current'文件夹下的程序，避免版本更新后需重复添加插件的问�?
+        "BurpSuite 添加插件时，请选择插件目录中 'current' 文件夹下的程序，避免版本更新后需重复添加插件的问题"
     ],
     "suggest": {
         "JDK": [
