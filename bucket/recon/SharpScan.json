@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "description": "C#开发的内网资产扫描器，方便内网横向移动和域内信息收集。(Scoop bucket for Cybersecurity by whoopscs)",
+    "description": "C#开发的内网资产扫描器，方便内网横向移动和域内信息收集�?Scoop bucket for Cybersecurity by whoopscs)",
     "homepage": "https://github.com/INotGreen/SharpScan",
     "license": "Unknown",
     "architecture": {

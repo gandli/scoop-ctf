@@ -1,6 +1,6 @@
 {
     "version": "4.5",
-    "description": "Cobalt Strike简称CS，是一款GUI框架式的渗透测试工具.(Scoop bucket for Cybersecurity by whoopscs)",
+    "description": "Cobalt Strike简称CS，是一款GUI框架式的渗透测试工�?(Scoop bucket for Cybersecurity by whoopscs)",
     "homepage": "https://www.cobaltstrike.com/",
     "license": "Proprietary",
     "notes": [

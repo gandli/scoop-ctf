@@ -15,7 +15,7 @@
         "    }",
         "}",
         "    # Crack ",
-        "Invoke-WebRequest -Uri 'https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/MobaXterm/Custom.mxtpro' -OutFile \"$dir\\Custom.mxtpro\"",                
+        "Invoke-WebRequest -Uri 'https://github.com/arch3rPro/PST-Files/raw/refs/heads/main/MobaXterm/Custom.mxtpro' -OutFile \"$dir\\Custom.mxtpro\"",
         "@('MobaXterm backup.zip', 'MobaXterm.ini') | ForEach-Object { PersistsFile $_ }"
     ],
     "bin": "MobaXterm.exe",
