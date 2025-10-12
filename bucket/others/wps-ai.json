@@ -4,7 +4,7 @@
     "homepage": "https://ai.wps.cn",
     "license": "https://privacy.wps.cn/policies/privacy/WPS-AI",
     "url": "https://pc-package.wpscdn.cn/wps/download/WPS_Setup_AI_16120.exe",
-    "hash": "",
+    "hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\$fname\"",
         "Expand-7zipArchive \"$dir\\`$_11_\\`$EXEFILE\" -Switches '-t#'",
@@ -25,10 +25,6 @@
         "regex": "https://pc-package.wpscdn.cn/wps/download/WPS_Setup_AI_(?<version>[\\d]+).exe"
     },
     "autoupdate": {
-        "architecture": {
-            "32bit": {
-                "url": "https://pc-package.wpscdn.cn/wps/download/WPS_Setup_AI_$version.exe"
-            }
-        }
+        "url": "https://pc-package.wpscdn.cn/wps/download/WPS_Setup_AI_$version.exe"
     }
 }

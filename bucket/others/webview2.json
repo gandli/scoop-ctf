@@ -5,53 +5,29 @@
     "license": "Copyright (c) Microsoft Corporation. All rights reserved.",
     "architecture": {
         "32bit": {
-            "hash": "",
-            "installer": {
-                "args": "/install"
-            },
-            "post_install": [
-                "$outputFileName=\"$dir\\uninstall.ps1\"",
-                "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\$version\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
-                "'$args=\"--uninstall --msedgewebview --force-uninstall --system-level\"' | Out-File -FilePath $outputFileName -Append",
-                "'iex \"$command $args\"' | Out-File -FilePath $outputFileName -Append"
-            ],
-            "uninstaller": {
-                "file": "uninstall.ps1"
-            },
+            "hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
             "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/c7da8858-c691-4094-9636-4f3e0597fa7b/MicrosoftEdgeWebView2RuntimeInstallerX86.exe"
         },
         "64bit": {
-            "hash": "",
-            "installer": {
-                "args": "/install"
-            },
-            "post_install": [
-                "$outputFileName=\"$dir\\uninstall.ps1\"",
-                "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\$version\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
-                "'$args=\"--uninstall --msedgewebview --force-uninstall --system-level\"' | Out-File -FilePath $outputFileName -Append",
-                "'iex \"$command $args\"' | Out-File -FilePath $outputFileName -Append"
-            ],
-            "uninstaller": {
-                "file": "uninstall.ps1"
-            },
+            "hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
             "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/eb295810-08dc-4e76-b709-2dc2d52a4d37/MicrosoftEdgeWebView2RuntimeInstallerX64.exe"
         },
         "arm64": {
             "hash": "cdc6ebc0698abdd2558f122699d9707d29ce72fef2a3a9dfb19d2c5fbebc0024",
-            "installer": {
-                "args": "/install"
-            },
-            "post_install": [
-                "$outputFileName=\"$dir\\uninstall.ps1\"",
-                "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\$version\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
-                "'$args=\"--uninstall --msedgewebview --force-uninstall --system-level\"' | Out-File -FilePath $outputFileName -Append",
-                "'iex \"$command $args\"' | Out-File -FilePath $outputFileName -Append"
-            ],
-            "uninstaller": {
-                "file": "uninstall.ps1"
-            },
             "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/9c5a54ef-ee23-4824-becb-28bf31c039e6/MicrosoftEdgeWebView2RuntimeInstallerARM64.exe"
         }
+    },
+    "installer": {
+        "args": "/install"
+    },
+    "post_install": [
+        "$outputFileName=\"$dir\\uninstall.ps1\"",
+        "'$command=\"C:\\''Program Files (x86)''\\Microsoft\\EdgeWebView\\Application\\$version\\Installer\\setup.exe\"' | Out-File -FilePath $outputFileName",
+        "'$args=\"--uninstall --msedgewebview --force-uninstall --system-level\"' | Out-File -FilePath $outputFileName -Append",
+        "'iex \"$command $args\"' | Out-File -FilePath $outputFileName -Append"
+    ],
+    "uninstaller": {
+        "file": "uninstall.ps1"
     },
     "autoupdate": {
         "architecture": {

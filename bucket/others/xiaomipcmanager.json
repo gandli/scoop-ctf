@@ -21,7 +21,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "$matchUrl#/installer.exe"
+                "url": "https://cdn.cnbj1.fds.api.mi-img.com/ota-packages/uhs__XiaomiPCManager_hyperos2_$version_00000000.exe#/installer.exe"
             }
         }
     }
